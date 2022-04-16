@@ -1,0 +1,2 @@
+mvn clean test -Dsurefire  -Durl=http://192.168.33.12:8080/login -Dusr=admin_vp -Dpass=admin_vp -DsShotPath=C:\\jenkins\\screnshots
+clean test -Dsurefire.suiteXmlFiles=testng.xml  -Durl=http://18.222.226.33:8080/login -Dusr=admin_vp -Dpass=admin_vp -DsShotPath=C:\\jenkins\\screenshots
