@@ -1,6 +1,6 @@
 - name: Get Package from Nexus 
   hosts: localhost
-  become: yes
+  #become: yes
   tasks:
     - name: Download latest VProfile.war from nexus
       get_url:
