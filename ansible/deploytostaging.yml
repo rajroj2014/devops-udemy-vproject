@@ -18,7 +18,7 @@
         archive:
           path: /usr/local/tomcat8/webapps/ROOT
           dest: "/opt/ROOT_{{timestamp}}.tgz"
-        when: artifact_stat.stat.exists
+        #when: artifact_stat.stat.exists
         register: archive_info
         tags:
          - deploy
@@ -32,7 +32,7 @@
         file:
           path: "{{item}}"
           state: absent
-        when: archive_info.changed
+        #when: archive_info.changed
         loop:
          - /usr/local/tomcat8/webapps/ROOT
          - /usr/local/tomcat8/webapps/ROOT.war
