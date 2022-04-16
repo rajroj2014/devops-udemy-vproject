@@ -1,5 +1,5 @@
 - name: Get Package from Nexus 
-  hosts: local
+  hosts: localhost
   become: yes
   tasks:
     - name: Download latest VProfile.war from nexus
